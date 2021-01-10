@@ -1,0 +1,411 @@
+<!DOCTYPE html><!--объявление html5-->
+<html lang="ru"><!--язык страницы-->
+<head>
+		<meta charset="utf-8"><!--кодировка страниц-->
+		<!--подключение гугл шрифтов-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Roboto&family=Yusei+Magic&display=swap" rel="stylesheet">
+		<!-- подключение jquery / слайдер -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<!--подключение css-->
+		<link rel="stylesheet" href="css/index.css">
+		<!--адаптив страницы под все устройства-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Favicons / иконка рядом с названием страницы -->
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+		<!---------------------------------------------------------------------------------------------->
+		<meta name="description" content="Freeze - сайт для тех, кто хочет знать больше про it и технологий!" /><!--описание страницы-->
+		<meta name="keywords" content="интернет компания, it, web, технологий" /><!--seo оптимизация-->
+		<meta name="google" content="notranslate" /><!--запрет переводить страницу-->
+		<title>FreeZe - сайт для будущих программистов</title><!--название страницы-->
+		<!---------------------------------------------------------------------------------------------->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><!--внедрение Js / Jquery-->
+</head>
+<body>
+<!-- иконки соц.сетей -->
+	<svg style="display: none;">
+	<!---------------------------------------------------------------------------------------------->
+	<symbol id="facebook" viewBox="0 0 430.113 430.114"><!--иконка facebook-->
+		<g>
+			<path d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805
+c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354
+c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z"/>
+		</g>
+	</symbol><!--иконка facebook-->
+	<!---------------------------------------------------------------------------------------------->
+	<symbol id="instagram" viewBox="0 0 511 511.9">	<!--иконка instagram-->
+		<g>
+	<path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/>
+
+<path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/>
+		</g>
+	</symbol><!--иконка twitter-->
+	<!---------------------------------------------------------------------------------------------->
+	<symbol id="vk" viewBox="0 0 511.962 511.962"><!--иконка vk-->
+<g>
+		<path d="M507.399,370.471c-1.376-2.304-9.888-20.8-50.848-58.816c-42.88-39.808-37.12-33.344,14.528-102.176
+			c31.456-41.92,44.032-67.52,40.096-78.464c-3.744-10.432-26.88-7.68-26.88-7.68l-76.928,0.448c0,0-5.696-0.768-9.952,1.76
+			c-4.128,2.496-6.784,8.256-6.784,8.256s-12.192,32.448-28.448,60.032c-34.272,58.208-48,61.28-53.6,57.664
+			c-13.024-8.416-9.76-33.856-9.76-51.904c0-56.416,8.544-79.936-16.672-86.016c-8.384-2.016-14.528-3.36-35.936-3.584
+			c-27.456-0.288-50.72,0.096-63.872,6.528c-8.768,4.288-15.52,13.856-11.392,14.4c5.088,0.672,16.608,3.104,22.72,11.424
+			c7.904,10.72,7.616,34.848,7.616,34.848s4.544,66.4-10.592,74.656c-10.4,5.664-24.64-5.888-55.2-58.72
+			c-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.928-3.616-11.84-4.768-11.84-4.768l-73.152,0.448
+			c0,0-10.976,0.32-15.008,5.088c-3.584,4.256-0.288,13.024-0.288,13.024s57.28,133.984,122.112,201.536
+			c59.488,61.92,127.008,57.856,127.008,57.856h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44
+			s-0.608-41.056,18.464-47.104c18.784-5.952,42.912,39.68,68.48,57.248c19.328,13.28,34.016,10.368,34.016,10.368l68.384-0.96
+			C488.583,400.807,524.359,398.599,507.399,370.471z"/>
+	</g>
+	</symbol><!--иконка linkedin-->
+	<!---------------------------------------------------------------------------------------------->
+</svg><!--иконки соц.сетей-->
+<!---------------------------------------------------------------------------->
+	<header class="header" id="header"><!--header-->
+		<div class="container"><!--container-->
+			<div class="header__inner"><!--header__inner-->
+				<div class="header__logo"><!--header__logo-->
+					<h2>Freeze</h2><!--логотип / фото-->
+				</div><!--header__logo-->
+<!------------------------------------------------------------------------------------------------->
+				<!--навигация в шапке -->
+				<nav class="nav" id="nav">
+					<a class="nav__link" href="#" data-scroll="#intro">Главная</a>
+					<a class="nav__link" href="#" data-scroll="#opportunity">Преимущества</a>
+					<a class="nav__link" href="#" data-scroll="#our">Наша услуги</a>
+					<a class="nav__link" href="#" data-scroll="#contacts">Контакты</a>
+				</nav>
+<!------------------------------------------------------------------------------------------------->
+						<!-- кнопка-бургер для маленьких экранов -->
+						<button class="burger" type="button" id="navToggle">
+							<span class="burger__item">Menu</span>
+						</button>
+			</div><!--header__inner-->
+		</div><!--container-->
+	</header>
+<!-------------------------------------------------------------------------------------------------------->
+<!-- Intro -->
+	<div class="intro" id="intro"><!--intro-->
+		<div class="container"><!--container-->
+			<div class="intro__inner"><!--intro__inner-->
+				<h1 class="intro__title">Freeze</h1>
+				<h2 class="intro__subtitle"> - сайт для будущих программистов! </h2>
+					<!--кнопка по центру в 1 блоке-->
+					<a class="btn  btn--red" href="#">Узнать больше</a>
+			</div><!--intro__inner-->
+		</div><!--container-->
+	</div><!--intro-->
+<!------------------------------------------------------------------------------------------------->
+<!-- Features -->
+		<div class="container" id="opportunity"><!--container-->
+			<div class="features"><!--features-->
+			<!--features items -->
+				<div class="features__item"></div>
+					<div class="features__pag">
+					<h4 class="features__title">Чистый код</h4>
+					<div class="features__text">Напишем адаптивный сайт, с чистым кодом и удобным интерфейсом! <a href="#" class="a__features" target="_blank">узнать больше</a></div>
+				</div>
+<!------------------------------------------------------------------------------------------------->
+			</div>
+		</div><!--container-->
+
+<!-- Works -->
+	<div class="works" id="our"><!-- works -->
+		<div class="container">
+			<div class="head__works">Наши работы!</div>
+		</div>
+			<!--works items -->
+		<div class="works__item">
+			<img class="works__photo" src="img/main3/PHP.jpg" alt="">
+			<div class="works__content">
+				<div class="works__title">PHP</div>
+				<div class="works__text"><a href="#" target="_blank">Узнать больше</a></div>
+			</div>
+		</div>
+<!------------------------------------------------------------------------------------------------->
+		<div class="works__item">
+			<img class="works__photo" src="img/main3/go.jpg" alt="">
+			<div class="works__content">
+				<div class="works__title">GO</div>
+				<div class="works__text"><a href="#" target="_blank">Узнать больше</a></div>
+			</div>
+		</div>
+<!------------------------------------------------------------------------------------------------->
+		<div class="works__item">
+			<img class="works__photo" src="img/main3/icpn2.jpg" alt="">
+			<div class="works__content">
+				<div class="works__title">JavaScript</div>
+				<div class="works__text"><a href="#" target="_blank">Узнать больше</a></div>
+			</div>
+		</div>
+<!------------------------------------------------------------------------------------------------->
+		<div class="works__item">
+			<img class="works__photo" src="img/main3/icon1.jpg" alt="">
+			<div class="works__content">
+				<div class="works__title">Python</div>
+				<div class="works__text"><a href="#" target="_blank">Узнать больше</a></div>
+			</div>
+		</div>
+<!------------------------------------------------------------------------------------------------->
+	</div><!-- works -->
+
+	<!-- remake /team
+	<div class="team">
+		<div class="container">
+			<div class="team__inner">
+
+				<div class="team__item">
+					<img class="team__photo" src="img/person/person1.jpg" alt="">
+					<div class="team__name">Ruth Woods</div>
+					<div class="team__prof">Founder, CEO</div>
+					<div class="team__text">
+						<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+						<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					</div>
+
+						<div class="social">
+							<a class="social__item" href="#" target="_blank">
+								<svg class="social__icon">
+										<use xlink:href="#facebook"></use>
+								</svg>
+							</a>
+					
+							<a class="social__item" href="#" target="_blank">
+								<svg class="social__icon">
+										<use xlink:href="#twitter"></use>
+								</svg>
+							</a>
+						
+							<a class="social__item" href="#" target="_blank">
+								<svg class="social__icon">
+										<use xlink:href="#linkedin"></use>
+								</svg>
+							</a>
+						</div>
+				</div>
+
+				<div class="team__item">
+					<img class="team__photo" src="img/people/people2.png" alt="">
+					<div class="team__name">Timothy Reed</div>
+					<div class="team__prof">Co-Founder, Developer</div>
+						<div class="team__text">
+							<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+							<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+						</div>
+						<div class="social">
+
+							<a class="social__item" href="#" target="_blank">
+								<svg class="social__icon">
+										<use xlink:href="#facebook"></use>
+								</svg>
+							</a>
+						
+							<a class="social__item" href="#" target="_blank">
+								<svg class="social__icon">
+										<use xlink:href="#twitter"></use>
+								</svg>
+							</a>
+						
+							<a class="social__item" href="#" target="_blank">
+								<svg class="social__icon">
+										<use xlink:href="#linkedin"></use>
+								</svg>
+							</a>
+						</div><
+
+				</div>
+					
+				<div class="team__item">
+					<img class="team__photo" src="img/people/people3.png" alt="">
+					<div class="team__name">Victoria Valdez</div>
+					<div class="team__prof">UI Designer</div>
+					<div class="team__text">
+						<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+						<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					</div>
+				
+						<div class="social">
+						
+							<a class="social__item" href="#" target="_blank">
+								<svg class="social__icon">
+										<use xlink:href="#facebook"></use>
+								</svg>
+							</a>
+					
+							<a class="social__item" href="#" target="_blank">
+								<svg class="social__icon">
+										<use xlink:href="#twitter"></use>
+								</svg>
+							</a>
+				
+							<a class="social__item" href="#" target="_blank">
+								<svg class="social__icon">
+										<use xlink:href="#linkedin"></use>
+								</svg>
+							</a>
+						</div>
+				</div>
+
+				<div class="team__item">
+					<img class="team__photo" src="img/people/people4.png" alt="">
+					<div class="team__name">Beverly Little</div>
+					<div class="team__prof">Data Scientist</div>
+					<div class="team__text">
+						<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+						<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+					</div>
+					
+						<div class="social">
+
+							<a class="social__item" href="#" target="_blank">
+								<svg class="social__icon">
+										<use xlink:href="#facebook"></use>
+								</svg>
+							</a>
+					
+							<a class="social__item" href="#" target="_blank">
+								<svg class="social__icon">
+										<use xlink:href="#twitter"></use>
+								</svg>
+							</a>
+						
+							<a class="social__item" href="#" target="_blank">
+								<svg class="social__icon">
+										<use xlink:href="#linkedin"></use>
+								</svg>
+							</a>
+						</div>
+				</div><
+			</div>
+		</div>
+	</div>  -->
+
+
+
+<!-- Testimonials --><!--
+	<div class="reviews" >
+		<div class="container">
+			<div class="reviews__slider" id="reviewsSlider">
+
+				<div class="slick-item">
+					<div class="reviews__item">
+					<div class="reviews__photo">
+						<img class="reviews__img" src="img/man3.jpg" alt="">
+					</div>
+
+					<div class="reviews__content">
+						<div class="reviews__text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+						<div class="reviews__author">Paul Klevn, Web delovement</div>
+					</div>
+					</div>
+				</div>
+				
+				<div class="slick-item">
+					<div class="reviews__item">
+						<div class="reviews__photo">
+							<img class="reviews__img" src="img/man2.jpg" alt="">
+						</div>
+
+						<div class="reviews__content">
+							<div class="reviews__text">“I will start with the fact that I want to brag, thanks to you I was finally able to organize my company, and now I am the owner of 5 offices, many thanks to you and your company for the great work!”</div>
+							<div class="reviews__author">Alex Wilson, our regular customer</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="slick-item">
+					<div class="reviews__item">
+						<div class="reviews__photo">
+							<img class="reviews__img" src="img/woman1.jpg" alt="">
+						</div>
+
+						<div class="reviews__content">
+							<div class="reviews__text">“Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, at voluptate consectetur odio, pariatur expedita est. Temporibus, ex quibusdam.”</div>
+							<div class="reviews__author">Ashley Rich, our regular customer</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="slick-item">
+					<div class="reviews__item">
+						<div class="reviews__photo">
+							<img class="reviews__img" src="img/man4.jpg" alt="">
+						</div>
+
+						<div class="reviews__content">
+							<div class="reviews__text">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nesciunt aut illo nisi minus.”</div>
+							<div class="reviews__author">Javin Berden, our regular customer</div>
+						</div>
+					</div>
+				</div>
+
+		</div>
+	</div> -->
+
+<!-- Footer -->
+	<footer class="footer" id="contacts">
+		<div class="container"><!--container-->
+<!------------------------------------------------------------------------------------------------->
+			<div class="footer__inner"><!--footer__inner-->
+<!------------------------------------------------------------------------------------------------->
+			<!-- 1 div -->
+				<div class="footer__block"><!--footer__block-->
+					<h4 class="footer__title">Гарантий</h4>
+					<div class="footer__address">
+						<div><a class="a__footer" href="#" target="_blank">Политика конфиденсальности</a></div>
+						<div><a class="a__footer" href="#" target="_blank">Пользовательское соглашение</a></div>
+					</div>
+				</div><!--footer__block-->
+<!------------------------------------------------------------------------------------------------->
+			<!-- 2 div -->
+			<div class="footer__block">
+				<h4 class="footer__title">Мы в соц.сетях!</h4>
+				<div class="social  social--footer">
+					<a class="social__item" href="#" target="_blank">
+						<svg class="social__icon">
+							<use xlink:href="#vk"></use>
+						</svg>
+					</a>
+					<a class="social__item" href="#" target="_blank">
+						<svg class="social__icon">
+							<use xlink:href="#instagram"></use>
+						</svg>
+					</a>
+					<a class="social__item" href="#" target="_blank">
+						<svg class="social__icon">
+							<use xlink:href="#facebook"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+<!------------------------------------------------------------------------------------------------->
+			<!-- 3 div -->
+				<div class="footer__block">
+					<h4 class="footer__title">О Компаний</h4>
+					<div class="footer__text">
+							<div><a class="a__footer" href="#" target="_blank">Достижения</a></div>
+							<div><a class="a__footer" href="#" target="_blank">Команда</a></div>
+							<div><a class="a__footer" href="#" target="_blank">Сертификаты</a></div>
+					</div>
+				</div>
+			</div><!-- footer__inner -->
+		</div><!-- container -->
+<!------------------------------------------------------------------------------------------------->
+	<div class="copyright"><!--copyright-->
+		<div class="container"><!--container-->
+			<div class="copyright__text">
+				<div>Copyright 2020-2021. All Rights Reserved.</div>
+			</div>
+		</div><!--container-->
+	</div><!--copyright -->
+	</footer>
+<!-- Javascript -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/app.js"></script>
+	</body>
+</html>
